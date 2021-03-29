@@ -480,6 +480,7 @@ var messages = [],
 
  discord = 'discord',
 
+ şartname = 'şartname',
 
  botMessage = "",
 
@@ -512,6 +513,7 @@ function chatbotResponse() {
 
 var discord = lastUserMessage.includes("discord");
 
+var şartname = lastUserMessage.includes("şartname");
 
 var udemy = lastUserMessage.includes("udemy");
 
@@ -571,7 +573,32 @@ botMessage = "Sorunu anlayamadım. hisarcs@hisarschool.k12.tr'ye sorunu iletebil
  }
 
 
+ if (şartname)
 
+
+
+
+
+
+
+{
+
+
+   botMessage = 'Pi Wars TR 2021 Şartnamesine anasayfadan ulaşabilirsin.';
+
+
+ 
+
+
+     
+
+
+
+
+
+
+
+ } 
 
 
 
@@ -586,7 +613,7 @@ botMessage = "Sorunu anlayamadım. hisarcs@hisarschool.k12.tr'ye sorunu iletebil
 {
 
 
-   botMessage = 'Udemy kursumuz 7 Şubat günü yayınlanacaktır. Başka yardım edebileceğim bir konu var mı?';
+   botMessage = 'Udemy kursumuz yayınlanmıştır. HisarCS Udemy hesabından veya anasayfadan kursa ulaşabilirsiniz. Başka yardım edebileceğim bir konu var mı?';
 
 
  
